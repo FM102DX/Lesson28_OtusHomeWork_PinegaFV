@@ -33,28 +33,6 @@ namespace Lesson28_MultiThread_PinegaFV
 
     }
 
-    public class FileWriter
-    {
-        StreamWriter _file;
-        
-        public FileWriter(string path)
-        {
-            _file= File.CreateText(path);
-        }
-
-        public void DoWrite(string text)
-        {
-            _file.WriteLine(text);
-        }
-
-        public void Close()
-        {
-            _file.Flush();
-            _file.Close();
-        }
-
-    }
-
     public class MyResult
     {
         public long rezult;
